@@ -1,0 +1,60 @@
+initialisation de git
+ 
+instalation de git :http://git-scm.com
+la premier chose a faire on verifie si git a ete correctement installer
+on part sur le terminal et on tape la commande suivantes: git --version 
+si tout est correct on aura la version de git." version 2.38.1.windows.1"
+
+2-) la deuxieme etape est de definir notre identite sa nous evitera a chaque modifiacation de
+dire qui tu est pour faire on tape la commande suivante:
+git config --global user.name "votre_nom"
+git config --global user.email "votre_mail"
+
+les commande de bases 
+		creation d'un projet
+
+avant tout on cree un repertoire : mkdir nom_du_repertoire
+				   cd nom_du_repertoire
+
+initialisation de git pour pouvoir l'utiliser avec la commande:
+								git init
+
+une fois l'initialisation terminer on peut demander un status global a tout moment 
+pour voir l'evolution de notre projet
+
+Enregistre l'etat du projet actuelle on tape la commande suivante : git commit -m "un commentaire"
+generalement elle se fais en deux etape 
+	1-) la selection du fichier avec : git add nom_fichier
+	2-)l'enregistrement : git commit -m "----"
+
+l'historique de nos modification par orde :
+					git log
+
+les branches se present comme une copie de notre projet initiale :
+pour cree une branche : git branch nom_du branche
+pour changer de branche : git checkout nom_branche
+pour rapatrier les modification qu'on na fais sur la branche secondaire
+on trois etape 
+1-) on reviens sur la branche principal : git checkout master 
+2-) on fusionner les commits : git merge nom_branche_secondaire
+3-) on supprime la branche secondaire : git branch -d  nom_branch
+
+
+              _______notion_de_github_____________
+
+depose_distant 
+on cree un nouveau repository on lui donne un nom
+
+2-) on cree un pont entre notre depot local et le depot distant
+ on tape la commande : git remote add origin <l'url que git vas nous donner> 
+
+3-) on depose notre projet avec la commande : git push origin master
+
+
+https://github.com/harouna123/projet_gestion_uahb.git
+
+
+
+
+
+
